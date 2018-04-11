@@ -37,7 +37,7 @@ function listEvents() {
         const $description = $element.find('.description').text()
         const event = {
           month: $month,
-          Day: $day,
+          day: $day,
           location: $location,
           locationUrl: $locationUrl,
           title: $title,

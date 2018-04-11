@@ -1,14 +1,14 @@
 {
-  "name": "scraper",
+  "name": "g-events-scraper-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A node express server that scrapes the g-events site, and has an endpoint that returns .json",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "@jasenmichael",
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",

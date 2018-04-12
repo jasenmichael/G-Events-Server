@@ -66,8 +66,8 @@ function listEvents() {
 const serverUrl = "http://g-events-api.herokuapp.com"
 const maps = [{
           LL: {
-            portraitMapUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
-            landscapeMapUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`,
+            landscapeMapUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
+            portraitMapUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
               name: "Classroom 1",
@@ -87,8 +87,8 @@ const maps = [{
           },
 
           L3: {
-            portraitMapUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
-            landscapeMapUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`,
+            landscapeMapUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
+            portraitMapUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
               name: "some room 1 on the 3rd floor",
@@ -108,8 +108,8 @@ const maps = [{
           },
 
           L4: {
-            portraitMapUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
-            landscapeMapUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`,
+            landscapeMapUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
+            portraitMapUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
               name: "some room 1 on the 4th floor",

@@ -1,8 +1,7 @@
 exports.seed = function(knex, Promise) {
-  return knex.raw('DELETE FROM "resolution"; ALTER SEQUENCE resolution_id_seq RESTART WITH 8;')
-    .del()
+  return knex.raw('DELETE FROM "events"; ALTER SEQUENCE events_id_seq RESTART WITH 8;')
     .then(function() {
-      return knex('01_events').insert([
+      return knex('events').insert([
         { 
           id: 1, 
           month: 12,

@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
         table.increments('id').primary()
         table.text('month')
         table.integer('day')
+        table.string('location')
         table.string('locationUrl')
         table.text('title')
         table.string('registerUrl', 500)

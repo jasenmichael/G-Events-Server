@@ -17,9 +17,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/maps', (req, res) => {
-      res.json(maps)
+  res.json(maps)
 })
-
 
 function listEvents() {
   return fetch(url)

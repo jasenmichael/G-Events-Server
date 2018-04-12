@@ -35,16 +35,16 @@ create express api endpoint
 ```
             maps: [{
               LL: {
-                mapUrl: "./images/LL-PlatteFloorMap.png",
+                mapUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`,
                 rooms: [{
                   id: 1,
                   name: "<room name here>",
                   roomMapUrl: "./images/LL-<room-id>-PlatteFloorMap.png"
-                },{
+                }, {
                   id: 2,
                   name: "<room name here>",
                   roomMapUrl: "./images/LL-<room-id>-PlatteFloorMap.png"
-                },{
+                }, {
                   id: 3,
                   name: "<room name here>",
                   roomMapUrl: "./images/LL-<room-id>-PlatteFloorMap.png"
@@ -52,16 +52,33 @@ create express api endpoint
               },
 
               L3: {
-                mapUrl: "./images/L1-PlatteFloorMap.png",
+                mapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`,
                 rooms: [{
                   id: 1,
                   name: "<room name here>",
                   roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
-                },{
+                }, {
                   id: 2,
                   name: "<room name here>",
                   roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
-                },{
+                }, {
+                  id: 3,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+                }]
+              },
+
+              L4: {
+                mapUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
+                rooms: [{
+                  id: 1,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+                }, {
+                  id: 2,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+                }, {
                   id: 3,
                   name: "<room name here>",
                   roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"

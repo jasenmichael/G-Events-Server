@@ -1,15 +1,79 @@
-server scope:
+# G-Events and Maps api
 
-##phase one
+```
+npm install
+npm run dev
+```
+events endpoint:
+
+[localhost:3000](localhost:3000)
+
+maps endpoint:
+
+[localhost:3000/maps](localhost:3000/maps)
+
+---
+
+# server scope:
+
+## phase one
 
 create express api endpoint
- - [X] build scraper
-  - [X] scrape events data
- - [X] create api end point
-  - [X] return events data as json
- - [X] deploy
 
-##phase two
+-   [x] build scraper
+-   [x] scrape events data
+-   [x] create api end point
+-   [x] return events data as json
+-   [x] deploy
 
-create db, and sync the scraped data
- - [ ]
+## phase two
+
+-   [ ] create db,
+-   [ ] create events migration and test seed(so we start with data in the db),
+-   [ ] create maps migration and seed floors array of rooms objects.
+
+```
+            maps: [{
+              LL: {
+                mapUrl: "./images/LL-PlatteFloorMap.png",
+                rooms: [{
+                  id: 1,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/LL-<room-id>-PlatteFloorMap.png"
+                },{
+                  id: 2,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/LL-<room-id>-PlatteFloorMap.png"
+                },{
+                  id: 3,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/LL-<room-id>-PlatteFloorMap.png"
+                }]
+              },
+
+              L3: {
+                mapUrl: "./images/L1-PlatteFloorMap.png",
+                rooms: [{
+                  id: 1,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+                },{
+                  id: 2,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+                },{
+                  id: 3,
+                  name: "<room name here>",
+                  roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+                }]
+              }
+           }]
+```
+
+-   [ ] create CRUD routes and queries.
+-   [ ] list list events /events
+-   [ ]
+
+-   [ ] sync the scraped data
+
+-   [ ]

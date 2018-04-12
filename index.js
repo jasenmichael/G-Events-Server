@@ -7,7 +7,7 @@ const url = 'https://www.galvanize.com/denver-platte/events'
 
 const app = express()
 app.use(cors())
-
+app.use('/map-images', express.static('map-images'))
 
 app.get('/', (req, res) => {
   listEvents()
@@ -59,9 +59,11 @@ function listEvents() {
     })
 }
 
+// const serverUrl = "http://localhost:3000"
+const serverUrl = "http://g-events-api.herokuapp.com"
 const maps = [{
   LL: {
-    mapUrl: "./images/LL-PlatteFloorMap.png",
+    mapUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`,
     rooms: [{
       id: 1,
       name: "<room name here>",
@@ -78,7 +80,24 @@ const maps = [{
   },
 
   L3: {
-    mapUrl: "./images/L1-PlatteFloorMap.png",
+    mapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`,
+    rooms: [{
+      id: 1,
+      name: "<room name here>",
+      roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+    }, {
+      id: 2,
+      name: "<room name here>",
+      roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+    }, {
+      id: 3,
+      name: "<room name here>",
+      roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
+    }]
+  },
+
+  L4: {
+    mapUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
     rooms: [{
       id: 1,
       name: "<room name here>",
@@ -93,6 +112,7 @@ const maps = [{
       roomMapUrl: "./images/L1-<room-id>-PlatteFloorMap.png"
     }]
   }
+
 }]
 
 const port = process.env.PORT || 3000

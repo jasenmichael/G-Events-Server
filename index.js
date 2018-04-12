@@ -73,19 +73,16 @@ const maps = [{
               name: "Classroom 1",
               roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
-
             }, {
               id: 2,
               name: "Classroom 2",
-              roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,   L3-PlatteFloorLandscapeMap.png
+              roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
-
             }, {
               id: 3,
               name: "Classroom 3",
               roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
-
             }]
           },
 
@@ -97,19 +94,16 @@ const maps = [{
               name: "some room 1 on the 3rd floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
-
             }, {
               id: 2,
               name: "some room 2 on the 3rd floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
-
             }, {
               id: 3,
               name: "some room 3 on the 3rd floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
-
             }]
           },
 
@@ -121,19 +115,16 @@ const maps = [{
               name: "some room 1 on the 4th floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
-
             }, {
               id: 2,
               name: "some room 2 on the 4th floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
-
             }, {
               id: 3,
               name: "some room 3 on the 4th floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
-
             }]
           }
 

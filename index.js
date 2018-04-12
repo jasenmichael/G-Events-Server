@@ -13,7 +13,7 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use('/map-images', express.static('map-images'))
 
-app.get('/', (req, res) => {
+app.get('/events', (req, res) => {
   listEvents()
     .then(events => {
       res.json(events)

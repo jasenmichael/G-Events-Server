@@ -2,11 +2,15 @@ const express = require('express')
 const fetch = require('node-fetch')
 const cheerio = require('cheerio')
 const cors = require('cors')
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
+const app = express()
 
 const url = 'https://www.galvanize.com/denver-platte/events'
 
-const app = express()
+
 app.use(cors())
+app.use(morgan('dev'))
 app.use('/map-images', express.static('map-images'))
 
 app.get('/', (req, res) => {

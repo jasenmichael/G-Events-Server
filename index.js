@@ -70,15 +70,21 @@ const maps = [{
             rooms: [{
               id: 1,
               name: "Classroom 1",
-              roomMapUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`
+
             }, {
               id: 2,
               name: "Classroom 2",
-              roomMapUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`
+
             }, {
               id: 3,
               name: "Classroom 3",
-              roomMapUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorMap.png`
+
             }]
           },
 
@@ -87,15 +93,21 @@ const maps = [{
             rooms: [{
               id: 1,
               name: "some room 1 on the 3rd floor",
-              roomMapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+
             }, {
               id: 2,
               name: "some room 2 on the 3rd floor",
-              roomMapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+
             }, {
               id: 3,
               name: "some room 3 on the 3rd floor",
-              roomMapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+
             }]
           },
 
@@ -104,15 +116,21 @@ const maps = [{
             rooms: [{
               id: 1,
               name: "some room 1 on the 4th floor",
-              roomMapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`
+
             }, {
               id: 2,
               name: "some room 2 on the 4th floor",
-              roomMapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`
+
             }, {
               id: 3,
               name: "some room 3 on the 4th floor",
-              roomMapUrl: `${serverUrl}/map-images/L3-PlatteFloorMap.png`
+              roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
+              roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`
+
             }]
           }
 

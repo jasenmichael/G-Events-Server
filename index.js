@@ -17,6 +17,9 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use('/map-images', express.static('map-images'))
 
+app.use("/rooms", rooms);
+app.use("/events", events);
+
 app.get('/events', (req, res) => {
   listEvents()
     .then(events => {

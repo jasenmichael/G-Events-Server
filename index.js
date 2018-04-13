@@ -7,6 +7,8 @@ const morgan = require('morgan')
 const app = express()
 
 const events = require("./routes/events");
+const rooms = require("./routes/rooms");
+
 
 const url = 'https://www.galvanize.com/denver-platte/events'
 
@@ -78,11 +80,13 @@ const maps = [{
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
             }, {
               id: 2,
+              level: "LL",
               name: "Classroom 2",
               roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
             }, {
               id: 3,
+              level: "LL",
               name: "Classroom 3",
               roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
@@ -94,16 +98,19 @@ const maps = [{
             portraitMapUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
+              level: "L3",
               name: "some room 1 on the 3rd floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
             }, {
               id: 2,
+              level: "L3",
               name: "some room 2 on the 3rd floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
             }, {
               id: 3,
+              level: "L3",
               name: "some room 3 on the 3rd floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
@@ -115,16 +122,19 @@ const maps = [{
             portraitMapUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
+              level: "L4",
               name: "some room 1 on the 4th floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
             }, {
               id: 2,
+              level: "L4",
               name: "some room 2 on the 4th floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
             }, {
               id: 3,
+              level: "L4",
               name: "some room 3 on the 4th floor",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`

@@ -10,6 +10,10 @@ const router = express.Router();
 const events = require("./routes/events");
 const rooms = require("./routes/rooms");
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }))
+
+
 
 const url = 'https://www.galvanize.com/denver-platte/events'
 

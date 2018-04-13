@@ -5,6 +5,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const app = express()
+const router = express.Router();
 
 const events = require("./routes/events");
 const rooms = require("./routes/rooms");
@@ -20,12 +21,12 @@ app.use('/map-images', express.static('map-images'))
 app.use("/rooms", rooms);
 app.use("/events", events);
 
-app.get('/events', (req, res) => {
-  listEvents()
-    .then(events => {
-      res.json(events)
-    })
-})
+// app.get('/events', (req, res) => {
+//   listEvents()
+//     .then(events => {
+//       res.json(events)
+//     })
+// })
 
 app.get('/maps', (req, res) => {
   res.json(maps)

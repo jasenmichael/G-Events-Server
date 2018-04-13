@@ -4,7 +4,8 @@ exports.seed = function(knex, Promise) {
       return knex('events').insert([
         { 
           id: 1, 
-          month: 12,
+          month: "December",
+          day: 14,
           location: "Platte",
           locationUrl: "https://www.galvanize.com/campuses/denver-platte",
           title: " Colorado Open Source Operating System User Group ",

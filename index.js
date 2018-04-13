@@ -6,6 +6,8 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const app = express()
 
+const events = require("./routes/events");
+
 const url = 'https://www.galvanize.com/denver-platte/events'
 
 
@@ -70,6 +72,7 @@ const maps = [{
             portraitMapUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
+              level: "LL"
               name: "Classroom 1",
               roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`

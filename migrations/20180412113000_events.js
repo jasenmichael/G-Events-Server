@@ -14,10 +14,10 @@ exports.up = function(knex, Promise) {
         table.text('floor')
         table.text('room')
     })
-  
+
 };
 
 exports.down = function(knex, Promise) {
     return knex.schema.dropTableIfExists('events')
-  
+
 };

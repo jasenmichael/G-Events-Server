@@ -5,6 +5,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const app = express()
+const router = express.Router();
 
 const events = require("./routes/events");
 const rooms = require("./routes/rooms");
@@ -17,12 +18,15 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use('/map-images', express.static('map-images'))
 
-app.get('/events', (req, res) => {
-  listEvents()
-    .then(events => {
-      res.json(events)
-    })
-})
+app.use("/rooms", rooms);
+app.use("/events", events);
+
+// app.get('/events', (req, res) => {
+//   listEvents()
+//     .then(events => {
+//       res.json(events)
+//     })
+// })
 
 app.get('/maps', (req, res) => {
   res.json(maps)
@@ -74,7 +78,7 @@ const maps = [{
             portraitMapUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`,
             rooms: [{
               id: 1,
-              level: "LL"
+              level: "LL",
               name: "Classroom 1",
               roomMapLandscapeUrl: `${serverUrl}/map-images/LL-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/LL-PlatteFloorPortraitMap.png`
@@ -99,19 +103,19 @@ const maps = [{
             rooms: [{
               id: 1,
               level: "L3",
-              name: "some room 1 on the 3rd floor",
+              name: "Datas Science Classroom",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
             }, {
               id: 2,
               level: "L3",
-              name: "some room 2 on the 3rd floor",
+              name: "1Up",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
             }, {
               id: 3,
               level: "L3",
-              name: "some room 3 on the 3rd floor",
+              name: "Sonic",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L3-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L3-PlatteFloorPortraitMap.png`
             }]
@@ -123,19 +127,19 @@ const maps = [{
             rooms: [{
               id: 1,
               level: "L4",
-              name: "some room 1 on the 4th floor",
+              name: "The Atrium",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
             }, {
               id: 2,
               level: "L4",
-              name: "some room 2 on the 4th floor",
+              name: "Megaman",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorLandscapeMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
             }, {
               id: 3,
               level: "L4",
-              name: "some room 3 on the 4th floor",
+              name: "Gold Coin",
               roomMapLandscapeUrl: `${serverUrl}/map-images/L4-PlatteFloorMap.png`,
               roomMapPortraitUrl: `${serverUrl}/map-images/L4-PlatteFloorPortraitMap.png`
             }]

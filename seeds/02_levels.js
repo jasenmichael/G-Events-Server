@@ -1,10 +1,8 @@
 const serverUrl = 'https://g-events-api.herokuapp.com'
 
 exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
-  return knex('levels').del()
+  return knex.raw('DELETE FROM "levels"; ALTER SEQUENCE levels_id_seq RESTART WITH 4;')
     .then(function () {
-      // Inserts seed entries
       return knex('levels').insert([
         {
           id: 1,

@@ -22,44 +22,6 @@ router.get("/add", (request, response, next) => {
     }).catch(next);
 });
 
-function listEvents() {
-  return fetch(url)
-    .then(res => res.text())
-    .then(body => {
-      const events = []
-      const $ = cheerio.load(body)
-      $('.event-card').each(function(i, element) {
-        const $element = $(element)
-        const $location = $element.find('.location a').text()
-        if ($location == 'Platte') {
-          const $month = $element.find('.month').text()
-          const $day = $element.find('.day').text()
-          const $title = $element.find('.title').text()
-          const $time = $element.find('.time').text()
-          const $category = $element.find('.category').text()
-          const $locationUrl = $element.find('.location a').attr('href')
-          const $registerUrl = $element.find('.event-button').attr('href')
-          const $description = $element.find('.description').text()
-          const event = {
-            month: $month,
-            day: $day,
-            location: $location,
-            locationUrl: $locationUrl,
-            title: $title,
-            registerUrl: $registerUrl,
-            time: $time,
-            category: $category,
-            description: $description,
-            floor: '',
-            room: ''
-          }
-          events.push(event)
-        }
-      })
-      return events
-    })
-}
-
 // read
 router.get("/:id", (request, response, next) => {
   queries.read(request.params.id).then(event => {
@@ -95,6 +57,10 @@ router.put("/:id", (request, response, next) => {
   }).catch(next);
 });
 
+
+
+
+
 function listEvents() {
   return fetch(url)
     .then(res => res.text())
@@ -132,10 +98,5 @@ function listEvents() {
       return events
     })
 }
-
-
-
-
-
 
 module.exports = router;

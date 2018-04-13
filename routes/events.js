@@ -12,14 +12,17 @@ const queries = require('../event-queries');
 // read
 const url = 'https://www.galvanize.com/denver-platte/events'
 router.get("/", (request, response, next) => {
-  listEvents().then(events => {
-      response.json(events)
-      console.log(events);
-    }).catch(next);
   queries.list().then(events => {
     console.log(events);
     response.json({ events });
   }).catch(next);
+});
+
+router.get("/add", (request, response, next) => {
+  listEvents().then(events => {
+      response.json(events)
+      console.log(events);
+    }).catch(next);
 });
 
 function listEvents() {

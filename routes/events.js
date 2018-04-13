@@ -14,7 +14,7 @@ const url = 'https://www.galvanize.com/denver-platte/events'
 router.get("/", (request, response, next) => {
   queries.list().then(events => {
     console.log(events);
-    response.json({ events });
+    response.json(events);
   }).catch(next);
 });
 

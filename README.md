@@ -6,13 +6,21 @@ npm run dev
 ```
 events endpoint:
 
-[localhost:3000](localhost:3000)
+[localhost:3000/events](localhost:3000/events)
+
+----
 
 maps endpoint:
 
 [localhost:3000/maps](localhost:3000/maps)
 
----
+----
+
+rooms endpoint:
+
+[localhost:3000/rooms](localhost:3000/rooms)
+
+----
 
 # server scope:
 

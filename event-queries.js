@@ -11,6 +11,7 @@ module.exports = {
       .where("id", id).first()
   },
   create(events) {
+    console.log(events, "1");
     return database("events")
       .insert(events)
       .returning("*")

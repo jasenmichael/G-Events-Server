@@ -4,23 +4,83 @@
 npm install
 npm run dev
 ```
-events endpoint:
+### events endpoint:
+
 events from db
+
 [localhost:3000/events](localhost:3000/events)
 
-events from galvanize.com scraper
-[localhost:3000/events/add](localhost:3000/events/add)
 ----
 
-rooms endpoint:
+events from galvanize.com scraper
+
+[localhost:3000/events/add](localhost:3000/events/add)
+
+----
+
+#### rooms endpoint:
 
 [localhost:3000/maps](localhost:3000/rooms)
 
 ----
 
-rooms endpoint:
+### CRUD routes /events
 
-[localhost:3000/rooms](localhost:3000/rooms)
+#### CREATE - add new events
+
+/events  method:POST
+
+(expects an object without id)
+
+----
+
+#### READ - read events
+
+/events/:id  method:GET
+
+----
+
+#### UPDATE - update events
+
+/events/:id  method:PUT
+
+(expects an object with id)
+
+----
+
+#### DELETE - delete event
+
+/events/:id   method:DELETE
+
+----
+
+### CRUD routes /rooms
+
+#### CREATE - add new rooms
+
+/rooms  method:POST
+
+(expects an object without id)
+
+----
+
+### READ - read rooms
+
+/rooms/:id  method:GET
+
+----
+
+### UPDATE - update room
+
+/rooms/:id  method:PUT
+
+(expects an object with id)
+
+----
+
+### DELETE - delete room
+
+/rooms/:id   method:DELETE
 
 ----
 

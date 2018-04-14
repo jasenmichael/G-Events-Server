@@ -40,7 +40,7 @@ events from galvanize.com scraper
 
 ----
 
-#### UPDATE - update events
+#### UPDATE - update event
 
 /events/:id  method:PUT
 
@@ -102,7 +102,7 @@ create express api endpoint
 -   [x] create db gevents
 -   [x] create events migration and test seed(so we start with data in the db),
 -   [x] create rooms migration and seed.
--   [ ] create CRUD routes and queries for /events and /rooms.
+-   [x] create CRUD routes and queries for /events and /rooms.
 -   [x] change events route to /events
 -   [ ] sync the scraped data
 

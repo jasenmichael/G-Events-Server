@@ -4,7 +4,7 @@ events from galvanize.com scraper
 
 you can see it in action [here](http://g-events-api.herokuapp.com/events/add)
 
-![geventsapi-screenshot](http:jasenmichael.com/geventsapi.png)
+![geventsapi-screenshot](http://jasenmichael.com/img/geventsapi.png)
 
 
 ```

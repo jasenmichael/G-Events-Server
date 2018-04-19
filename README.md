@@ -8,9 +8,9 @@ you can see it in action [here](http://g-events-api.herokuapp.com/events/add)
 
 
 ```
-git clone https://github.com/jasenmichael/osslib-org.git
+git clone https://github.com/jasenmichael/g-events-server.git
 
-cd osslib-org
+cd g-events-server
 
 npm install
 
